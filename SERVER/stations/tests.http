@@ -1,0 +1,28 @@
+GET http://localhost:5500/api/station
+
+
+#####
+
+GET http://localhost:5500/api/station/68d1486c3281f9008bc4df5a
+
+#####
+POST http://localhost:5500/api/station
+Content-Type: application/json
+
+{
+   
+   "stationName": "ציבורי - דימרי סנטר דימונה ",
+    "address": "20 Sderot Golda Me'ir",
+    "city": "Dimona",
+    "latitude": 31.0654,
+    "longitude": 35.0324,
+    "operator": "Ev4u",
+    "connector": "type 2",
+    "power": 12.0,
+    "speed": "איטי"
+}
+
+#####
+
+
+DELETE http://localhost:5500/api/station/68dabec68d57991f66869ac2

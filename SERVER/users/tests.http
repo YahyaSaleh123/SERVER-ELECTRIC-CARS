@@ -1,0 +1,108 @@
+GET http://localhost:5500/api/user
+
+###
+GET http://localhost:5500/api/user/profile/68d1395a53bc41db1f80efe6
+###
+POST http://localhost:5500/api/user
+Content-Type: application/json
+
+{
+   
+ "firstname":"muhmad",
+    "lastname":"msarwe",
+    "email":"yahya1@gmail.com",
+    "password":"123456"
+
+  
+}
+
+####
+
+PUT http://localhost:5500/api/user/68d1381253bc41db1f80efe5
+Content-Type: application/json
+
+{
+    
+     "firstname":"yahya",
+    "lastname":"saleh",
+    "email":"hamzaSexy666@gmail.com",
+    "password":"ha22mza"
+}
+
+####
+
+DELETE http://localhost:5500/api/user/68d6bda951b814c7e3235f74
+
+#####
+
+POST  http://localhost:5500/api/user/login
+Content-Type: application/json
+
+{
+    
+    "email":"muhmad55555@gmail.com",
+    "password":"mudsadsadasdashmad"
+}
+
+#####
+
+POST http://localhost:5500/api/user/Vehicle/68d1395a53bc41db1f80efe6
+Content-Type: application/json
+
+{
+    "number":"1235",
+    "manufacturer": "BYD",
+    "model": "Atto 3",
+    "type": "SUV קומפקטי",
+    "year": "2022"
+}
+#### 
+
+POST http://localhost:5500/api/user/creditCard/68d1395a53bc41db1f80efe6
+Content-Type: application/json
+
+{
+    "cardNumber": "4850 4800 7155 3123",
+    "holder": "Hamza Odeh",
+    "expiry": "12/30",
+    "cvv": "155"
+       
+}
+
+####
+
+
+DELETE http://localhost:5500/api/user/credit_card/68d1395a53bc41db1f80efe6
+
+####
+
+POST http://localhost:5500/api/user/search_history/68d1395a53bc41db1f80efe6
+Content-Type: application/json
+
+{
+    "stationName": "ציבורי - קדמא נווה אילן ירושלים",
+    "address": "Ha-Shayara Street",
+    "city": "Neve Ilan",
+    "operator": "Ev4u",
+    "connector": "type 2",
+    "power": 12.0,
+    "speed": "איטי"
+}
+
+####
+
+DELETE http://localhost:5500/api/user/Vehicle/68d1395a53bc41db1f80efe6/123456
+
+
+#####
+
+POST http://localhost:5500/api/user/chat/68d1395a53bc41db1f80efe6
+Content-Type: application/json
+
+{
+    "sender": "68d6bda951b814c7e3235f74",
+    "time":"2025-10-06T15:00:00.000Z" ,
+    "message": "jhouioh"
+}
+
+
